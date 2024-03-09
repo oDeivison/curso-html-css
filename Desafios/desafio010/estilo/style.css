@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family:'Android';
-    src: url('../pacote-projeto-d010/fontes/idroid.otf') format('opentype'); 
+    src: url('../fontes/idroid.otf') format('opentype'); 
 }
 
 :root{
@@ -152,6 +152,7 @@ main a:hover{
 
 main > img{
     width: 100%;
+    
 }
 main > img.pequena{ 
     max-width: 350px;
