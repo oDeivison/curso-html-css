@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background-color: rgb(48, 48, 212);
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            margin: 50px;
+            border-radius: 10px;
+            justify-content: space-around;
+            align-items: center;
+
+            /*  
+            space-evely = mesmo espaçamento em tudo
+                space-between = os 2 elemento nas extremidades e o resto com um espaçamento dividido
+                space-around = divide o container por espaços, pelo tanto de itens que tem, e centraliza os item nesses espaços
+                */
+        }
+        .item{
+            background-color: lightblue;
+            border: 1px black solid;
+            text-align: center;
+            padding: 10px;
+            
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    
+</body>
+</html>
