@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: rgb(48, 48, 212);
+            display: flex;
+            align-items: flex-start;
+            height: 400px;
+        }
+        .item{
+            background-color: lightblue;
+            border: 1px black solid;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item" style="align-self: flex-end;">B</div>
+        <div class="item" style="align-self: auto;">C</div> <!--- aling self: auto; erda do container pai('aling-itens') -->
+        <div class="item">D</div>
+        <div class="item" style="align-self: center;">E</div>
+        <div class="item" style="align-self: stretch;">F</div>
+        <div class="item">G</div>
+    </div>
+    
+</body>
+</html>
