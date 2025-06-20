@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: rgb(48, 48, 212);
+            display: flex;
+            flex-flow:  row nowrap;
+         
+        }
+        .item{
+            border: 1px black solid;
+            text-align: center;
+            flex-basis: 450px;
+           flex-shrink: 1; /* Por padrão é 1*/
+           flex-grow: 1; /* Por padrão é 1*/
+        }
+        #cxa{
+            background-color: aqua;
+            /* flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 250px; */
+
+            flex-direction: 2 1 250px;
+        }
+        #cxb{
+            background-color: aquamarine;
+            /* flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 250px; */
+
+            flex: 1 1 250px;
+        }
+        #cxc{
+            background-color: lightblue;
+            /* flex-grow: 3;
+            flex-shrink: 3;
+            flex-basis: 250px; */
+
+            flex: 3 3 250px;
+        }
+/*
+        deixa padrão não tipo se eu não botei nada{
+            flex: 0 1 auto;
+            ou
+            flex: initial;
+        }
+
+        deixa nenhum elemento flexivel{
+            flex: 0 0 auto;
+            ou
+            flex: none;
+        }
+
+        maximo de flexbilidade que pode ter{
+            flex: 1 1 auto;
+            ou
+            flex: auto;
+        }
+
+        somente o grow{
+            flex: 3;
+            ou
+            flex:3 1 auto;
+        }
+*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxa">A</div>
+        <div class="item" id="cxb">B</div>
+        <div class="item" id="cxc">C</div>
+    </div>
+    
+</body>
+</html>
